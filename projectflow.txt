@@ -27,7 +27,7 @@
 
 >>>>> Configure Prometheus to Scrape Your Flask App <<<<<
 16. Get the Flask App Service IP - "kubectl get svc" (Look for the flask-metrics-app and note its ClusterIP and port.)
-    10.107.61.186 - 5000:30737/TCP
+    10.101.61.35 - 5000:30671/TCP
 17. Update the Prometheus ConfigMap to add your Flask app as a scrape target: "kubectl edit configmap prometheus-server -n monitoring"
 18. Look for the scrape_configs section and add:
 
